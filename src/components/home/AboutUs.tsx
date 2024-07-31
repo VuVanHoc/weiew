@@ -7,7 +7,7 @@ export default function AboutUs() {
 	return (
 		<section className="relative mx-8 mt-8 flex h-[540px] items-center py-[80px]">
 			<div className="flex-1">
-				<h2 className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-5xl font-bold leading-[58px] text-transparent">
+				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-5xl font-bold leading-[58px] text-transparent">
 					Về chúng tôi
 				</h2>
 				<div className="mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
@@ -26,7 +26,7 @@ export default function AboutUs() {
 			<Image
 				src={oshape}
 				alt="group shape"
-				className="absolute -right-10 bottom-1/2"
+				className="absolute -right-8 bottom-1/2"
 			/>
 			<Image
 				src={polygon}

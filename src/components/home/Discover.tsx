@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import dotFrame from "/public/dot-frame.png";
+import rocket from "/public/rocket.png";
+import xShape from "/public/x-shape.png";
+import listConnect from "/public/list-connect.png";
 import discover1 from "/public/discover-1.png";
 import discover2 from "/public/discover-2.png";
 import review1step1 from "/public/review1-step1.png";
@@ -10,6 +15,8 @@ import review2step1 from "/public/review2-step1.png";
 import review2step2 from "/public/review2-step2.png";
 import review2step3 from "/public/review2-step3.png";
 import review2step4 from "/public/review2-step4.png";
+import { useState } from "react";
+import cx from "clsx";
 
 const REVIEWS = [
 	{
@@ -60,19 +67,19 @@ const REVIEWS = [
 			},
 			{
 				name: "Khám phá bản thân",
-				image: review2step1,
+				image: review2step2,
 				description:
 					"Thực hiện các bài trắc nghiệm tính cách và năng lực để hiểu rõ hơn về bản thân.",
 			},
 			{
 				name: "Tư vấn, định hướng 1:1",
-				image: review2step1,
+				image: review2step3,
 				description:
 					"Buổi gặp gỡ online với các anh chị, giúp em thu hẹp các lựa chọn và đề xuất các ngành học, nghề nghiệp phù hợp.",
 			},
 			{
 				name: "Đồng hành và hỗ trợ",
-				image: review2step1,
+				image: review2step4,
 				description:
 					"WeieW sẽ đồng hành cùng em trong suốt quá trình chọn ngành, chọn trường. Hãy cùng weiew đỗ NV1!",
 			},
@@ -80,10 +87,13 @@ const REVIEWS = [
 	},
 ];
 export default function Discover() {
+	const [currentReviewSelected, setCurrentReviewSelected] = useState(
+		REVIEWS[0],
+	);
 	return (
 		<section className="relative mx-8 mt-8 py-[80px]">
 			<div className="mx-auto w-2/3">
-				<h2 className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-center text-5xl font-bold leading-[58px] text-transparent">
+				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold leading-[58px] text-transparent">
 					WEIEW Có gì?
 				</h2>
 				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
@@ -93,26 +103,85 @@ export default function Discover() {
 				text ever since the 1500s`}
 				</p>
 			</div>
-			<div className="mt-8 grid grid-cols-2 gap-8">
+			<div className="relative mt-8 grid grid-cols-2 gap-8">
 				{REVIEWS.map((review) => (
 					<div
+						onClick={() => setCurrentReviewSelected(review)}
 						key={review.id}
-						className="from-primary to-secondary group cursor-pointer rounded-3xl border border-gray-50 bg-white px-10 py-10 shadow-xl transition-all hover:bg-gradient-to-r"
+						className={cx(
+							"group cursor-pointer rounded-3xl border border-gray-50 bg-white from-primary to-secondary px-8 py-8 shadow-xl transition-all hover:bg-gradient-to-r",
+							currentReviewSelected.id === review.id
+								? "bg-gradient-to-r"
+								: "",
+						)}
 					>
 						<Image
 							src={review.image}
 							alt={review.name}
 							className="w-full"
 						/>
-						<p className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-center text-2xl font-bold text-transparent group-hover:text-white">
+						<p
+							className={cx(
+								"bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent group-hover:text-white",
+								currentReviewSelected.id === review.id
+									? "text-white"
+									: "",
+							)}
+						>
 							{review.name}
 						</p>
-						<p className="mt-4 text-center text-[#989B9F] group-hover:text-white">
+						<p
+							className={cx(
+								"mt-4 text-center text-[#989B9F] group-hover:text-white",
+								currentReviewSelected.id === review.id
+									? "text-white"
+									: "",
+							)}
+						>
 							{review.description}
 						</p>
 					</div>
 				))}
 			</div>
+			<h2 className="mt-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold leading-[58px] text-transparent">
+				{`Quy Trình ${currentReviewSelected.name}`}
+			</h2>
+			<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
+			<div className="relative mx-auto grid w-[90%] grid-cols-4 gap-4">
+				<Image
+					src={rocket}
+					alt="dot frame"
+					className="absolute -left-[80px] top-[45%] -translate-y-[45%]"
+				/>
+				<Image
+					className="absolute left-1/2 top-[45%] -translate-x-1/2 -translate-y-[45%]"
+					src={listConnect}
+					alt=""
+				/>
+				{currentReviewSelected.steps.map((step, index) => (
+					<div
+						key={index}
+						className="flex flex-col items-center justify-start gap-5 bg-white py-10"
+					>
+						<Image
+							src={step.image}
+							alt={step.name}
+							className="h-[100px]"
+						/>
+						<div className="mt-10 text-center">
+							<p className="text-xl font-bold text-black">
+								Bước {index + 1}
+								<br />
+								{step.name}
+							</p>
+							<p className="mt-4 text-center text-[#989B9F]">
+								{step.description}
+							</p>
+						</div>
+					</div>
+				))}
+			</div>
+
 			<Image
 				src={dotFrame}
 				alt="dot frame"

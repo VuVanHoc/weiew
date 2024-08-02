@@ -1,4 +1,5 @@
 import AboutUs from "@/components/home/AboutUs";
+import AllReview from "@/components/home/AllReview";
 import ContactForm from "@/components/home/ContactForm";
 import CustomerReviews from "@/components/home/CustomerReviews";
 import Discover from "@/components/home/Discover";
@@ -13,7 +14,7 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
 	return (
-		<main className="mx-auto min-h-screen max-w-7xl overflow-x-hidden">
+		<main className="relative mx-auto min-h-screen max-w-7xl overflow-x-hidden">
 			<Header />
 			<Hero />
 			<Statistics />
@@ -24,6 +25,7 @@ export default function Home() {
 			<StorySuccess />
 			<ContactForm />
 			<OnSocial />
+			<AllReview />
 			<Footer />
 		</main>
 	);

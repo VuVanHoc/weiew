@@ -1,7 +1,7 @@
 export default function Hero() {
 	return (
-		<section className="relative flex h-[600px] w-full flex-col items-center justify-center bg-[url('/world-map.png')] bg-cover bg-center bg-no-repeat text-center">
-			<h1 className="from-primary to-secondary bg-gradient-to-r bg-clip-text text-[150px] font-extrabold uppercase leading-[180px] text-transparent">
+		<section className="relative mt-14 flex h-[600px] w-full flex-col items-center justify-center bg-[url('/world-map.png')] bg-cover bg-center bg-no-repeat text-center">
+			<h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-[150px] font-extrabold uppercase leading-[180px] text-transparent">
 				Gen Z review <br />
 				trải nghiệm
 			</h1>

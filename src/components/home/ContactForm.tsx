@@ -5,7 +5,10 @@ import contact from "/public/contact.png";
 
 export default function ContactForm() {
 	return (
-		<section className="relative mx-8 flex items-center">
+		<section
+			id="contact-us"
+			className="relative mx-8 flex items-center pt-20"
+		>
 			<div className="flex-1">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-left text-5xl font-bold capitalize leading-[58px] text-transparent">
 					Đăng Ký Ngay Để Nhận Thông tin và quà tặng

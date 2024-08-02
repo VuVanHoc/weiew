@@ -4,7 +4,10 @@ import dotShape from "/public/dot-frame.png";
 
 export default function AllReview() {
 	return (
-		<section className="relative mt-8 flex flex-col items-center py-[100px]">
+		<section
+			id="bai-review"
+			className="relative mt-8 flex flex-col items-center py-[100px]"
+		>
 			<div className="mx-auto w-2/3">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
 					All Reviews

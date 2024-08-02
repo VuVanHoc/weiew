@@ -28,7 +28,7 @@ const responsive = {
 
 export default function StorySuccess() {
 	return (
-		<section className="relative items-center py-[40px]">
+		<section className="relative items-center pt-[40px]">
 			<div className="mx-auto w-2/3">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
 					Câu Chuyện Thành Công

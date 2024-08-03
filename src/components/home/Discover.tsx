@@ -3,10 +3,9 @@
 import Image from "next/image";
 import dotFrame from "/public/dot-frame.png";
 import rocket from "/public/rocket.png";
-import xShape from "/public/x-shape.png";
 import listConnect from "/public/list-connect.png";
-import discover1 from "/public/discover-1.png";
-import discover2 from "/public/discover-2.png";
+import discover1 from "/public/service1.png";
+import discover2 from "/public/service2.png";
 import review1step1 from "/public/review1-step1.png";
 import review1step2 from "/public/review1-step2.png";
 import review1step3 from "/public/review1-step3.png";
@@ -91,16 +90,17 @@ export default function Discover() {
 		REVIEWS[0],
 	);
 	return (
-		<section className="relative mx-8 mt-8 py-[80px]">
-			<div className="mx-auto w-2/3">
+		<section className="relative mx-8 mt-8 py-[80px]" id="services">
+			<div className="mx-auto w-4/5">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold leading-[58px] text-transparent">
-					WEIEW Có gì?
+					WEIEW Có Gì?
 				</h2>
 				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
 				<p className="text-center text-[18px] text-[#989B9F]">
-					{`Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy
-				text ever since the 1500s`}
+					Nhằm cung cấp thông tin review xác thực cũng như giúp các
+					bạn gen Z có lựa chọn đúng đắn hơn đặc biệt trong việc chọn
+					trường Đại học và chọn một trung tâm tiếng anh tốt để học,
+					WeieW xin được hỗ trợ với 2 dịch vụ:
 				</p>
 			</div>
 			<div className="relative mt-8 grid grid-cols-2 gap-8">

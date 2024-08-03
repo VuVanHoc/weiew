@@ -4,16 +4,16 @@ import Link from "next/link";
 
 const NAVS = [
 	{
-		href: "#dai-hoc",
-		label: "Đại học",
+		href: "#services",
+		label: "Dịch Vụ",
 	},
 	{
-		href: "#trung-tam",
-		label: "Trung tâm",
+		href: "#gift",
+		label: "Quà tặng",
 	},
 	{
-		href: "#phong-tro",
-		label: "Phòng trọ",
+		href: "#feedback",
+		label: "Feedback",
 	},
 	{
 		href: "#bai-review",
@@ -22,10 +22,12 @@ const NAVS = [
 ];
 export default function Header() {
 	return (
-		<header className="fixed top-0 z-50 flex w-full max-w-7xl items-center justify-between p-4 px-8 backdrop-blur-lg">
-			<Image src={logo} alt="Weiew" height={42} />
+		<header className="fixed top-0 z-50 flex w-full max-w-7xl items-center justify-between bg-white p-4 px-8">
+			<Link href={"/"}>
+				<Image src={logo} alt="Weiew" height={42} />
+			</Link>
 			<nav>
-				<ul className="flex items-center justify-center gap-8 text-2xl capitalize text-[#989B9F]">
+				<ul className="flex items-center justify-center gap-8 text-2xl capitalize text-black">
 					{NAVS.map((nav) => (
 						<li
 							key={nav.href}
@@ -36,7 +38,10 @@ export default function Header() {
 					))}
 				</ul>
 			</nav>
-			<Link href={"#contact-us"}>
+			<Link
+				href={"https://www.facebook.com/messages/t/118295134619790"}
+				target="_blank"
+			>
 				<button className="rounded-lg bg-gradient-to-r from-primary to-secondary px-4 py-2 text-[18px] text-white hover:opacity-80">
 					Liên hệ
 				</button>

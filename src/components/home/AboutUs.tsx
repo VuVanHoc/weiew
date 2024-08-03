@@ -2,6 +2,7 @@ import Image from "next/image";
 import xshape from "/public/x-shape.png";
 import oshape from "/public/o-shape.png";
 import polygon from "/public/polygon-shape.png";
+import aboutUs from "/public/about-us.svg";
 
 export default function AboutUs() {
 	return (
@@ -12,12 +13,32 @@ export default function AboutUs() {
 				</h2>
 				<div className="mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
 				<p className="text-[18px] text-[#989B9F]">
-					Weiew là trang tin tức dành cho giới trẻ, chuyên cung cấp
-					những đánh giá chân thực và chi tiết về các trung tâm tiếng
-					Anh, phòng trọ và tư vấn chọn trường đại học.
+					Weiew là nơi chia sẻ những đánh giá chân thực và chi tiết về
+					những thông tin mập mờ của các trung tâm tiếng Anh, phòng
+					trọ hay trường đại học. Giúp gen Z lựa chọn đúng trước hàng
+					ngàn lựa chọn sai!
 				</p>
+				<br />
+				<p className="text-[18px] text-[#989B9F]">
+					🔥 WEIEW ĐÃ LÀM ĐƯỢC VÀ SẼ TIẾP TỤC LÀM:
+				</p>
+				<ul className="text-[18px] text-[#989B9F]">
+					<li>
+						➤ Đưa thông tin minh bạch rõ ràng được kiểm chứng tới
+						cho mọi người.
+					</li>
+					<li>
+						➤ Đảm bảo quyền lợi tối đa cho các bạn học viên đăng ký
+						qua WeieW
+					</li>
+					<li>
+						➤ Cùng học viên kiểm tra thông tin trường học, trung
+						tâm, đồng hành trực tiếp hỗ trợ học viên xử lý các vấn
+						đề 24/7
+					</li>
+				</ul>
 			</div>
-			<div className="h-[382px] flex-1 bg-gray-500"></div>
+			<Image src={aboutUs} alt="group shape" className="w-[600px]" />
 			<Image
 				src={xshape}
 				alt="group shape"
@@ -31,7 +52,7 @@ export default function AboutUs() {
 			<Image
 				src={polygon}
 				alt="group shape"
-				className="absolute right-[20%] top-0"
+				className="absolute right-[40%] top-0"
 			/>
 		</section>
 	);

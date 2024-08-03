@@ -11,11 +11,6 @@ export default function OnSocial() {
 					WEIEW Trên Mạng Xã Hội
 				</h2>
 				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
-				<p className="text-center text-[18px] text-[#989B9F]">
-					{`Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy
-				text ever since the 1500s`}
-				</p>
 			</div>
 			<Image src={onsocialImg} alt="onsocial" className="" />
 			<Image

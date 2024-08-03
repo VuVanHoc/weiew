@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className="mt-[100px] grid grid-cols-6 rounded-t-[50px] bg-gradient-to-r from-primary to-secondary px-10 py-10 text-white">
-			<div className="col-span-2">
+		<footer className="mt-[100px] grid grid-cols-4 gap-4 bg-gradient-to-r from-primary to-secondary px-10 py-10 text-white">
+			<div className="col-span-1">
 				<Image
 					src={logo}
 					alt="Weiew"
@@ -13,51 +13,57 @@ export default function Footer() {
 					className="brightness-0 invert"
 				/>
 				<div className="mt-4 flex w-[200px] justify-between">
-					<Image
-						src={"/facebook-fill.png"}
-						alt={"location"}
-						width={24}
-						height={24}
-					/>
-					<Image
-						src={"/instagram-fill.png"}
-						alt={"location"}
-						width={24}
-						height={24}
-					/>
-					<Image
-						src={"/twitter-fill.png"}
-						alt={"location"}
-						width={24}
-						height={24}
-					/>
-					<Image
-						src={"/youtube-fill.png"}
-						alt={"location"}
-						width={24}
-						height={24}
-					/>
+					<Link
+						href={"https://www.facebook.com/weiew.vn"}
+						target="_blank"
+					>
+						<Image
+							src={"/facebook-fill.png"}
+							alt={"location"}
+							width={24}
+							height={24}
+						/>
+					</Link>
+					<Link
+						href={"https://www.tiktok.com/@weiew.vn"}
+						target="_blank"
+					>
+						<Image
+							className="brightness-0 invert"
+							src={"/tik-tok.png"}
+							alt={"location"}
+							width={24}
+							height={24}
+						/>
+					</Link>
+					<Link
+						href={"https://www.linkedin.com/company/weiew"}
+						target="_blank"
+					>
+						<Image
+							className="brightness-0 invert"
+							src={"/linkedin.png"}
+							alt={"location"}
+							width={24}
+							height={24}
+						/>
+					</Link>
+					<Link
+						href={"https://www.threads.net/@weiew.vn"}
+						target="_blank"
+					>
+						<Image
+							className="brightness-0 invert"
+							src={"/threads.png"}
+							alt={"location"}
+							width={24}
+							height={24}
+						/>
+					</Link>
 				</div>
 			</div>
-
-			<div>
-				<p className="font-bold">Company News</p>
-				<br />
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-			</div>
-			<div>
-				<p className="font-bold">Usefull links</p>
-				<br />
-				<p>Đại Học</p>
-				<p>Trung Tâm</p>
-				<p>Phòng trọ</p>
-				<p>Bài Review</p>
-			</div>
-			<div className="col-span-2">
-				<p className="font-bold">Contact us</p>
+			<div className="col-span-1">
+				<p className="font-bold">Liên hệ với WEIEW</p>
 				<br />
 				<div className="flex items-center gap-1">
 					<Image
@@ -66,34 +72,37 @@ export default function Footer() {
 						width={24}
 						height={24}
 					/>
-					<span>
-						380 St Kilda Road, Melbourne VIC 3004, Australia
-					</span>
+					<span>Cau Giay District, Hanoi, Vietnam</span>
 				</div>
-				<br />
-				<div className="flex items-center gap-1">
+				<div className="mt-2 flex items-center gap-1">
 					<Image
 						src={"/icon-email.png"}
 						alt={"location"}
 						width={24}
 						height={24}
 					/>
-					<span>info@gmail.com</span>
+					<span>infor@weiew.vn</span>
 				</div>
 				<br />
-				<div className="flex items-center gap-1">
-					<Image
-						src={"/icon-phone.png"}
-						alt={"location"}
-						width={24}
-						height={24}
-					/>
-					<span>
-						1800-121-3637
-						<br />
-						+91 555 234-8765
-					</span>
-				</div>
+			</div>
+			<div>
+				<p className="font-bold">Tin tức Review</p>
+				<br />
+				<Link href={"#"}>Review Đại học, Ngành học</Link>
+				<br />
+				<Link href={"#"}>Review Trung tâm Tiếng Anh</Link>
+			</div>
+			<div>
+				<p className="font-bold">Our group</p>
+				<br />
+				<Link
+					href={"https://www.facebook.com/groups/weiew.reviewdaihoc"}
+					target="_blank"
+				>
+					Review Đại học cùng WEIEW
+				</Link>
+				<br />
+				<Link href={"#"}>Review Trung tâm Tiếng Anh</Link>
 			</div>
 		</footer>
 	);

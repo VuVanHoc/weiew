@@ -6,33 +6,57 @@ import Carousel from "react-multi-carousel";
 const reviews = [
 	{
 		id: 1,
-		name: "An Hạ",
-		des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply ",
+		date: "1 May 2023",
+		name: "Esther Ng",
+		des: "Web hữu ích và uy tín, vô tình đọc được cmt ở gr khác nhắc tới Weiew, mình tìm thử và bất ngờ với những gì bản thân có thể nhận được. ",
 	},
 	{
 		id: 2,
-		name: "An Hạ",
-		des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply ",
+		date: "30 November 2023",
+		name: "Đại Hoàng Nam",
+		des: `quá bất công vì bạn bè giới thiệu WeieW hơi chậm. Mà cũng vì phần mình... Muốn tìm trung tâm uy tín mà không biết xem review ở đâu" người thật việc thật". Và sau khi theo dõi thì siêuuuu recommend mọi người page này luôn vì thông tin uy tín và chứng cứ xác thực tin cậy.`,
 	},
 	{
 		id: 3,
-		name: "An Hạ",
-		des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply ",
+		name: "Nguyễn Dương",
+		des: "WeieW cung cấp miễn phí nhiều tài liệu tiếng anh hay và chất lượng kèm thêm các ad rất đáng iu.  10 đỉm",
+		date: "20 November 2023",
 	},
 	{
 		id: 4,
-		name: "An Hạ",
-		des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply ",
+		name: "Hằng Đặng",
+		des: "Mình tìm được nhiều tài liệu hữu ích ở đây, thật may mắn khi có thể tìm được một nơi uy tín thế này giữa một rừng những trung tâm tiếng anh chưa rõ chất lượng",
+		date: "5 October 2023",
 	},
 	{
 		id: 5,
-		name: "An Hạ",
-		des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply ",
+		name: "Phương Linhh",
+		date: "26 August 2023",
+		des: "Sốp nhiệt tình, dễ thương, vui tính quá trời quá đất. Hỏi gì đáp nấy đúng trọng tâm, không lòng vòng, không chạy quảng cáo và vô cùng uy tín nè. Tui toàn hỏi sốp vào giờ ngoài hành tinh mà sốp vẫn rấc là nhiệt tình, hoan hỉii. Tinh hoa hội tụ, học sinh sinh viên gấc iuuuu ncl 10000 đỉm ",
 	},
 	{
 		id: 6,
-		name: "An Hạ",
-		des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply ",
+		name: "Phan Xuân Mai",
+		date: "19 September 2023",
+		des: "Trong lúc mình đang loay hoay không biết tìm trung tâm nào uy tính để ôn luyện tiếng anh, những review tài liệu, trung tâm tiếng anh ở cộng đồng WeieW đã giúp mình tìm kím nơi phù hợp nhất. Thong tin bên WeieW rất chất lượng và đáng tin cậy, nhờ có những reviews chân thật thế này mình mới tìm đc trung tâm tiếng anh uy tín ",
+	},
+	{
+		id: 7,
+		name: "Bùi Đình Thái Diệu",
+		date: "2 August 2023",
+		des: "Page uy tín tìm đc chỗ học chất lượng sau khi đc page hỗ trợ. Admin phát triển tốt nhé cái này mn cần chứ giờ seller nhiều vs seeding chả biết đâu mà lần",
+	},
+	{
+		id: 8,
+		name: "Vũ Hải",
+		date: "2 Setember 2023",
+		des: "Page trả lời nhanh , nhiệt tình ạ . Giữa lúc thời thế rối reng người sale nhiều gấp đôi người học thế này rất cần 1 người có tâm như page để tìm được chỗ học uy tín ",
+	},
+	{
+		id: 9,
+		name: "Nguyen Linh",
+		date: "16 September 2023",
+		des: "Cảm ơn ad đã chia sẻ tài liệu tiếng anh, nhờ tài liệu mà em đã đạt aim được ielts để xét tuyển vào đại học. Chúc page được nhiều người biết đến và viral nha",
 	},
 ];
 
@@ -57,16 +81,19 @@ const responsive = {
 };
 export default function CustomerReviews() {
 	return (
-		<section className="relative items-center bg-[url('/wave-1.png')] bg-contain bg-center bg-no-repeat py-[40px]">
+		<section
+			id="feedback"
+			className="relative items-center bg-[url('/wave-1.png')] bg-contain bg-center bg-no-repeat py-[40px] pt-20"
+		>
 			<div className="mx-auto w-2/3">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
 					Trải nghiệm sau khi dùng dịch vụ
 				</h2>
 				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
 				<p className="text-center text-[18px] text-[#989B9F]">
-					{`Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy
-				text ever since the 1500s`}
+					Feedback của các bạn gen z sau khi đã được WeieW hỗ trợ!
+					<br />
+					Luôn tự hào và cố gắng duy trì 100% feedback tốt
 				</p>
 			</div>
 			<div className="mt-8 w-full justify-center">
@@ -81,7 +108,7 @@ export default function CustomerReviews() {
 					{reviews.map((review) => (
 						<div
 							key={review.id}
-							className="relative rounded-lg border border-gray-100 bg-white p-8 shadow-lg"
+							className="relative h-full rounded-lg border border-gray-100 bg-white p-8 shadow-lg"
 						>
 							<Image
 								className="absolute -top-3 right-4"
@@ -91,10 +118,10 @@ export default function CustomerReviews() {
 								height={50}
 							/>
 							<div className="flex gap-2">
-								<div className="aspect-square h-[50px] w-[50px] rounded-full bg-slate-500"></div>
+								<div className="aspect-square h-[70px] w-[70px] rounded-full bg-slate-500"></div>
 								<div>
 									<p className="flex items-center gap-2">
-										<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-2xl font-bold text-transparent">
+										<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg font-bold text-transparent">
 											{review.name}
 										</span>
 										<Image
@@ -103,14 +130,21 @@ export default function CustomerReviews() {
 											width={20}
 											height={20}
 										></Image>
-										<span>recommends</span>
+										<span className="text-sm">
+											recommends
+										</span>
 									</p>
 									<p className="font-semibold text-[#989B9F]">
 										WEIEW - Gen Z Review Trải Nghiệm
 									</p>
+									<p>{review.date}</p>
 								</div>
 							</div>
-							<p className="mt-4">{review.des}</p>
+							<p className="mt-4">
+								{`"`}
+								{review.des}
+								{`"`}
+							</p>
 						</div>
 					))}
 				</Carousel>

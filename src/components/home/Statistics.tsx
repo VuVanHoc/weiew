@@ -2,7 +2,7 @@ import TextAnimated from "../ui/TextAnimated";
 
 export default function Statistics() {
 	return (
-		<section className="items-between from-primary to-secondary mx-8 flex justify-between rounded-2xl bg-gradient-to-r px-4 py-4 text-white shadow-lg">
+		<section className="items-between mx-8 flex justify-between rounded-2xl bg-gradient-to-r from-primary to-secondary px-10 py-4 text-white shadow-lg">
 			<div className="text-center">
 				<TextAnimated
 					className="text-4xl font-bold"

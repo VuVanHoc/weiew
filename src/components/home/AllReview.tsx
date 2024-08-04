@@ -8,7 +8,7 @@ export default function AllReview() {
 			id="bai-review"
 			className="relative mt-8 flex flex-col items-center py-[100px]"
 		>
-			<div className="mx-auto w-2/3">
+			<div className="mx-auto w-full lg:w-2/3">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
 					All Reviews
 				</h2>
@@ -19,7 +19,7 @@ export default function AllReview() {
 				text ever since the 1500s`}
 				</p>
 			</div>
-			<div className="relative mt-8 grid w-full grid-cols-1 gap-8 md:grid-cols-3">
+			<div className="lgg:w-full relative mt-8 grid w-[90%] grid-cols-1 gap-32 md:grid-cols-3 lg:gap-8">
 				{Array.from({ length: 3 }).map((_, index) => (
 					<div
 						key={index}

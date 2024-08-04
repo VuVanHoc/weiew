@@ -6,12 +6,12 @@ import aboutUs from "/public/about-us.svg";
 
 export default function AboutUs() {
 	return (
-		<section className="relative mx-8 mt-8 flex h-[540px] items-center py-[80px]">
+		<section className="relative mx-8 mt-8 flex h-auto flex-col items-center pt-[80px] lg:h-[540px] lg:flex-row lg:py-[80px]">
 			<div className="flex-1">
-				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-5xl font-bold leading-[58px] text-transparent">
+				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-3xl font-bold text-transparent lg:text-5xl lg:leading-[58px]">
 					Về chúng tôi
 				</h2>
-				<div className="mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
+				<div className="mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
 				<p className="text-[18px] text-[#989B9F]">
 					Weiew là nơi chia sẻ những đánh giá chân thực và chi tiết về
 					những thông tin mập mờ của các trung tâm tiếng Anh, phòng

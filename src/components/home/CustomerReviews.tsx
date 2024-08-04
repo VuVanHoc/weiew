@@ -72,7 +72,7 @@ const responsive = {
 	},
 	tablet: {
 		breakpoint: { max: 1024, min: 464 },
-		items: 2,
+		items: 1,
 	},
 	mobile: {
 		breakpoint: { max: 464, min: 0 },
@@ -83,32 +83,32 @@ export default function CustomerReviews() {
 	return (
 		<section
 			id="feedback"
-			className="relative items-center bg-[url('/wave-1.png')] bg-contain bg-center bg-no-repeat py-[40px] pt-20"
+			className="relative items-center bg-[url('/wave-1.png')] bg-contain bg-center bg-no-repeat py-[40px] lg:pt-20"
 		>
-			<div className="mx-auto w-2/3">
-				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
+			<div className="mx-auto w-full lg:w-2/3">
+				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold capitalize text-transparent lg:text-5xl lg:leading-[58px]">
 					Trải nghiệm sau khi dùng dịch vụ
 				</h2>
-				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
-				<p className="text-center text-[18px] text-[#989B9F]">
+				<div className="mx-auto mb-4 mt-6 h-[4px] w-[100px] bg-[#202330] lg:mb-10 lg:h-[8px]"></div>
+				<p className="text-center text-sm text-[#989B9F] lg:text-[18px]">
 					Feedback của các bạn gen z sau khi đã được WeieW hỗ trợ!
 					<br />
 					Luôn tự hào và cố gắng duy trì 100% feedback tốt
 				</p>
 			</div>
-			<div className="mt-8 w-full justify-center">
+			<div className="mx-auto mt-8 w-full justify-center lg:w-full">
 				<Carousel
 					infinite={true}
 					autoPlay={true}
 					ssr={true}
-					itemClass="mx-4"
+					itemClass="px-4"
 					responsive={responsive}
 					className="mx-auto pb-[100px] pt-8"
 				>
 					{reviews.map((review) => (
 						<div
 							key={review.id}
-							className="relative h-full rounded-lg border border-gray-100 bg-white p-8 shadow-lg"
+							className="relative h-full rounded-lg border border-gray-100 bg-white p-2 shadow-lg lg:p-8"
 						>
 							<Image
 								className="absolute -top-3 right-4"

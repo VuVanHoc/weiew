@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className="mt-[100px] grid grid-cols-4 gap-4 bg-gradient-to-r from-primary to-secondary px-10 py-10 text-white">
+		<footer className="mt-[100px] grid grid-cols-1 gap-10 bg-gradient-to-r from-primary to-secondary px-10 py-10 text-white md:grid-cols-4 md:gap-4">
 			<div className="col-span-1">
 				<Image
 					src={logo}

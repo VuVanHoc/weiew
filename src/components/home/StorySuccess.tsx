@@ -29,12 +29,12 @@ const responsive = {
 
 export default function StorySuccess() {
 	return (
-		<section className="relative items-center pt-[40px]">
-			<div className="mx-auto w-2/3">
-				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
+		<section className="relative items-center lg:pt-[40px]">
+			<div className="w-ful mx-auto">
+				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-3xl font-bold capitalize text-transparent lg:text-5xl lg:leading-[58px]">
 					Câu Chuyện Thành Công
 				</h2>
-				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
+				<div className="mx-auto mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
 				<p className="text-center text-[18px] text-[#989B9F]"></p>
 			</div>
 
@@ -42,30 +42,31 @@ export default function StorySuccess() {
 				infinite={true}
 				// autoPlay={true}
 				ssr={true}
+				showDots={true}
 				responsive={responsive}
 				itemClass="flex justify-center"
-				className="mx-auto pb-[100px] pt-8"
+				className="mx-auto pt-8 lg:pb-[100px]"
 			>
 				{/* Story 1 */}
-				<div className="flex w-4/5 gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg">
+				<div className="flex w-4/5 flex-col gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg lg:flex-row">
 					<Image
 						src="/story1.png"
 						alt="story-success"
 						width={324}
 						height={554}
-						className="h-[554px] w-[324px] rounded-[32px]"
+						className="rounded-[32px] lg:h-[554px] lg:w-[324px]"
 					/>
 					<div>
-						<h4 className="text-2xl font-bold">
+						<h4 className="text-base font-bold lg:text-2xl">
 							Vấn đề: Chưa tìm được trung tâm phù hợp do có quá
 							nhiều thông tin, khó để xác định chất lượng trung
 							tâm!
 						</h4>
 						<br />
-						<p className="text-[18px] font-bold">
+						<p className="text-sm font-bold lg:text-[18px]">
 							Phân tích nhu cầu:
 						</p>
-						<ul className="list-inside list-disc">
+						<ul className="list-inside list-disc text-xs lg:text-base">
 							<li>
 								Học từ nền tảng đến 7.0, mong học phí dưới 40tr
 							</li>
@@ -76,8 +77,10 @@ export default function StorySuccess() {
 						<br />
 						<div className="border-b-[1px] border-white"></div>
 						<br />
-						<p className="text-[18px] font-bold">Đánh giá:</p>
-						<blockquote>
+						<p className="text-sm font-bold lg:text-[18px]">
+							Đánh giá:
+						</p>
+						<blockquote className="text-xs lg:text-base">
 							{`"Nhờ được bạn giới thiệu nên em biết tới được weiew
 							và được weiew support trong quá trình tìm hiểu trung
 							tâm! Về Feedback điểm em ưng thì anh chị tư vấn cực
@@ -113,25 +116,25 @@ export default function StorySuccess() {
 				</div>
 
 				{/* Story 2 */}
-				<div className="flex w-4/5 gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg">
+				<div className="flex w-4/5 flex-col gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg lg:flex-row">
 					<Image
 						src="/story1.png"
 						alt="story-success"
 						width={324}
 						height={554}
-						className="h-[554px] w-[324px] rounded-[32px]"
+						className="rounded-[32px] lg:h-[554px] lg:w-[324px]"
 					/>
 					<div>
-						<h4 className="text-2xl font-bold">
+						<h4 className="text-base font-bold lg:text-2xl">
 							Vấn đề: Đã đăng ký ở một trung tâm khác nhưng thấy
 							không ổn nên muốn rút học phí và tìm một trung tâm
 							chất lượng hơn
 						</h4>
 						<br />
-						<p className="text-[18px] font-bold">
+						<p className="text-sm font-bold lg:text-[18px]">
 							Phân tích nhu cầu:
 						</p>
-						<ul className="list-inside list-disc">
+						<ul className="list-inside list-disc text-xs lg:text-base">
 							<li>Học Toeic 4 kỹ năng với học phí từ 15-20tr</li>
 							<li>
 								Hỗ trợ xử lý vấn đề với trung tâm cũ và tìm
@@ -142,7 +145,7 @@ export default function StorySuccess() {
 						<div className="border-b-[1px] border-white"></div>
 						<br />
 						<p className="text-[18px] font-bold">Đánh giá:</p>
-						<blockquote>
+						<blockquote className="text-xs lg:text-base">
 							{`"Biết đến weiew qua tiktok với mấy group review tiếng anh, lúc đầu cũng chưa có tin tưởng lắm nên mình mới tự tìm hiểu và đk tại một trung tâm T**  nhưng đến lúc đk xong mới biết là bị sale bên đó tư vấn sai học phí mà cũng do sinh viên mới lên nên chưa biết nhiều và bị chốt sale dù mình chưa học thử lúc đó cũng không biết nhờ ai giúp vì ba mẹ ở quê nên tìm đến weiew. Và đây thật sự là một lựa chọn đúng đắn vì anh tư vấn còn giúp mình đến tận trung tâm để giải quyết! Mình vs 3 đứa bạn đã được trung tâm hỗ trợ toàn bộ chi phí học còn thiếu do bị tư vấn nhầm học phí! Nói chung là cũng okela do sv từ quê lên không có tiền để đóng thêm. Cảm ơn weiew nhiều ạ!!!!"`}{" "}
 						</blockquote>
 						<br />
@@ -165,25 +168,25 @@ export default function StorySuccess() {
 				</div>
 
 				{/* Story 3 */}
-				<div className="flex w-4/5 gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg">
+				<div className="flex w-4/5 flex-col gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg lg:flex-row">
 					<Image
 						src="/story1.png"
 						alt="story-success"
 						width={324}
 						height={554}
-						className="h-[554px] w-[324px] rounded-[32px]"
+						className="rounded-[32px] lg:h-[554px] lg:w-[324px]"
 					/>
 					<div>
-						<h4 className="text-2xl font-bold">
+						<h4 className="text-base font-bold lg:text-2xl">
 							Vấn đề: Đã tham khảo và đi nghe tư vấn rất nhiều
 							trung tâm, từng bị sales chốt cọc nhưng phát hiện
 							trung tâm đó có phốt
 						</h4>
 						<br />
-						<p className="text-[18px] font-bold">
+						<p className="text-sm font-bold lg:text-[18px]">
 							Phân tích nhu cầu:
 						</p>
-						<ul className="list-inside list-disc">
+						<ul className="list-inside list-disc text-xs lg:text-base">
 							<li>
 								Học từ 3.0 lên 6.5 Ielts vs học phí từ 25-28tr
 							</li>
@@ -195,8 +198,10 @@ export default function StorySuccess() {
 						<br />
 						<div className="border-b-[1px] border-white"></div>
 						<br />
-						<p className="text-[18px] font-bold">Đánh giá:</p>
-						<blockquote>
+						<p className="text-sm font-bold lg:text-[18px]">
+							Đánh giá:
+						</p>
+						<blockquote className="text-xs lg:text-base">
 							“ Mình từng bị một bạn sales cố tình dẫn dắt và lùa
 							mình vào một trung tâm không uy tín với tư cách là
 							rủ đi học chung, đến tận lúc sau khi chốt cọc tại
@@ -242,7 +247,7 @@ export default function StorySuccess() {
 			<Image
 				src={polygon}
 				alt="group shape"
-				className="absolute right-[20%] top-0"
+				className="absolute right-[20%] top-20"
 			/>
 		</section>
 	);

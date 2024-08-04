@@ -16,7 +16,7 @@ export default function Home() {
 	return (
 		<main className="relative mx-auto min-h-screen max-w-7xl overflow-x-hidden">
 			<Header />
-			<div className="bg-[url('/world-map.png')] bg-cover bg-center bg-no-repeat">
+			<div className="bg-[url('/world-map.png')] bg-cover bg-top bg-no-repeat lg:bg-center">
 				<Hero />
 				<Statistics />
 			</div>

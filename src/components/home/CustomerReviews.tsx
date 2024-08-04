@@ -118,10 +118,10 @@ export default function CustomerReviews() {
 								height={50}
 							/>
 							<div className="flex gap-2">
-								<div className="aspect-square h-[70px] w-[70px] rounded-full bg-slate-500"></div>
+								<div className="aspect-square h-[60px] w-[60px] rounded-full bg-slate-500"></div>
 								<div>
 									<p className="flex items-center gap-2">
-										<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg font-bold text-transparent">
+										<span className="w-[150px] overflow-hidden text-ellipsis text-nowrap bg-gradient-to-r from-primary to-secondary bg-clip-text text-lg font-bold text-transparent">
 											{review.name}
 										</span>
 										<Image
@@ -134,13 +134,13 @@ export default function CustomerReviews() {
 											recommends
 										</span>
 									</p>
-									<p className="font-semibold text-[#989B9F]">
+									<p className="text-sm font-semibold text-[#989B9F]">
 										WEIEW - Gen Z Review Trải Nghiệm
 									</p>
 									<p>{review.date}</p>
 								</div>
 							</div>
-							<p className="mt-4">
+							<p className="mt-4 h-[70px] overflow-hidden text-ellipsis">
 								{`"`}
 								{review.des}
 								{`"`}

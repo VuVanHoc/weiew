@@ -14,7 +14,7 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
 	return (
-		<main className="relative mx-auto min-h-screen max-w-7xl overflow-x-hidden">
+		<main className="relative mx-auto min-h-screen max-w-screen-2xl overflow-x-hidden">
 			<Header />
 			<div className="bg-[url('/world-map.png')] bg-cover bg-top bg-no-repeat lg:bg-center">
 				<Hero />

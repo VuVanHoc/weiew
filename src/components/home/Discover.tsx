@@ -154,7 +154,7 @@ export default function Discover() {
 					className="absolute -left-[100px] top-[40%] hidden -translate-y-[40%] lg:-left-[80px] lg:top-[45%] lg:block lg:-translate-y-[45%]"
 				/>
 				<Image
-					className="absolute left-1/2 top-[40%] -translate-x-1/2 -translate-y-[40%] lg:top-[45%] lg:-translate-y-[45%]"
+					className="absolute left-1/2 top-[35%] -translate-x-1/2 -translate-y-[40%] md:top-[50%] lg:top-[45%] lg:-translate-y-[45%]"
 					src={listConnect}
 					alt=""
 				/>
@@ -166,7 +166,7 @@ export default function Discover() {
 						<Image
 							src={step.image}
 							alt={step.name}
-							className="aspect-square lg:h-[100px]"
+							className="aspect-square md:h-[100px] lg:h-[100px]"
 						/>
 						<div className="mt-4 text-center lg:mt-10">
 							<p className="text-xs font-bold text-black lg:text-xl">

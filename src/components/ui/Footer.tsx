@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className="mt-[100px] grid grid-cols-1 gap-10 bg-gradient-to-r from-primary to-secondary px-10 py-10 text-white md:grid-cols-4 md:gap-4">
+		<footer className="mt-[100px] grid grid-cols-1 gap-10 bg-gradient-to-r from-primary to-secondary px-10 py-10 text-xs text-white md:grid-cols-4 md:gap-4 lg:gap-10 lg:text-base">
 			<div className="col-span-1">
 				<Image
 					src={logo}
@@ -12,7 +12,7 @@ export default function Footer() {
 					height={42}
 					className="brightness-0 invert"
 				/>
-				<div className="mt-4 flex w-[200px] justify-between">
+				<div className="mt-4 flex w-[150px] justify-between lg:w-[200px]">
 					<Link
 						href={"https://www.facebook.com/weiew.vn"}
 						target="_blank"

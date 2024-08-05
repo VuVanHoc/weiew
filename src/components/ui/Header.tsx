@@ -29,9 +29,9 @@ export default function Header() {
 	const [showNav, setShowNaw] = useState(false);
 
 	return (
-		<header className="fixed top-0 z-50 flex w-full max-w-7xl items-center justify-between bg-white p-4 px-8">
+		<header className="fixed left-1/2 top-0 z-50 flex w-full max-w-screen-2xl -translate-x-1/2 items-center justify-between bg-white p-4 px-8">
 			{/* Navbar Mobile */}
-			<div className="flex gap-4">
+			<div className="flex gap-4 lg:hidden">
 				<Image
 					onClick={() => setShowNaw((prev) => !prev)}
 					src={menuIcon}

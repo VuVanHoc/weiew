@@ -19,7 +19,7 @@ export default function AllReview() {
 				text ever since the 1500s`}
 				</p>
 			</div>
-			<div className="lgg:w-full relative mt-8 grid w-[90%] grid-cols-1 gap-32 md:grid-cols-3 lg:gap-8">
+			<div className="lgg:w-full relative mt-8 grid w-[90%] grid-cols-1 gap-32 md:grid-cols-2 md:gap-10 md:gap-y-32 lg:grid-cols-3 lg:gap-8">
 				{Array.from({ length: 3 }).map((_, index) => (
 					<div
 						key={index}

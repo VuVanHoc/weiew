@@ -50,7 +50,7 @@ export default function StorySuccess() {
 				{/* Story 1 */}
 				<div className="flex w-4/5 flex-col gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg lg:flex-row">
 					<Image
-						src="/story1.png"
+						src="/phuongthuy.png"
 						alt="story-success"
 						width={324}
 						height={554}
@@ -170,7 +170,7 @@ export default function StorySuccess() {
 				{/* Story 3 */}
 				<div className="flex w-4/5 flex-col gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg lg:flex-row">
 					<Image
-						src="/story1.png"
+						src="/story-bdtdieu.png"
 						alt="story-success"
 						width={324}
 						height={554}

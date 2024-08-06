@@ -10,20 +10,15 @@ export default function AllReview() {
 		>
 			<div className="mx-auto w-full lg:w-2/3">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-5xl font-bold capitalize leading-[58px] text-transparent">
-					All Reviews
+					Bài Review
 				</h2>
 				<div className="mx-auto mb-10 mt-6 h-[8px] w-[100px] bg-[#202330]"></div>
-				<p className="text-center text-[18px] text-[#989B9F]">
-					{`Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy
-				text ever since the 1500s`}
-				</p>
 			</div>
 			<div className="lgg:w-full relative mt-8 grid w-[90%] grid-cols-1 gap-32 md:grid-cols-2 md:gap-10 md:gap-y-32 lg:grid-cols-3 lg:gap-8">
 				{Array.from({ length: 3 }).map((_, index) => (
 					<div
 						key={index}
-						className="h-[300px] rounded-3xl border border-gray-50 bg-white bg-[url('/neu-bg.png')] px-8 py-8 shadow-xl transition-all"
+						className="h-[300px] rounded-3xl border border-gray-50 bg-white bg-[url('/neu-bg.png')] bg-cover bg-no-repeat px-8 py-8 shadow-xl transition-all"
 					>
 						<div className="flex aspect-square h-16 w-16 flex-col items-center justify-center rounded-full bg-white p-2 text-center font-bold">
 							<p className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">

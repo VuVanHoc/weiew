@@ -62,7 +62,7 @@ export default function ContactForm() {
 		>
 			<div className="flex-1">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-left text-3xl font-bold capitalize text-transparent lg:text-5xl lg:leading-[58px]">
-					Đăng ký ngay để nhận full tài liệu tiếng anh <br />
+					Đăng ký để nhận full tài liệu tiếng anh <br />
 					<span className="text-lg lg:text-4xl">
 						(30+ khoá học, 300+ sách và giáo trình)
 					</span>

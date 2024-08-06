@@ -151,7 +151,7 @@ export default function Discover() {
 					{`Quy Trình ${currentReviewSelected.name}`}
 				</h2>
 				<div className="mx-auto mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
-				<div className="relative mx-auto grid w-full grid-cols-4 gap-4 lg:w-[90%]">
+				<div className="relative mx-auto grid w-full grid-cols-4 gap-4 lg:w-[80%]">
 					<Image
 						src={rocket}
 						alt="dot frame"

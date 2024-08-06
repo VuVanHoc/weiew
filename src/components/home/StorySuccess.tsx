@@ -45,7 +45,7 @@ export default function StorySuccess() {
 				showDots={true}
 				responsive={responsive}
 				itemClass="flex justify-center"
-				className="mx-auto pt-8 lg:pb-[100px]"
+				className="mx-auto pt-8 lg:w-[90%] lg:pb-[100px]"
 			>
 				{/* Story 1 */}
 				<div className="flex w-4/5 flex-col gap-4 rounded-[32px] bg-gradient-to-r from-primary to-secondary p-8 text-white shadow-lg lg:flex-row">
@@ -237,12 +237,12 @@ export default function StorySuccess() {
 			<Image
 				src={xshape}
 				alt="group shape"
-				className="absolute -left-5 bottom-1/2"
+				className="absolute bottom-1/2 left-5"
 			/>
 			<Image
 				src={oshape}
 				alt="group shape"
-				className="absolute -right-8 bottom-1/2"
+				className="absolute bottom-1/2 right-8"
 			/>
 			<Image
 				src={polygon}

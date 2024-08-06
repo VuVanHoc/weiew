@@ -1,6 +1,6 @@
 export default function Hero() {
 	return (
-		<section className="relative mt-14 flex h-[250px] w-full flex-col items-center justify-center text-center lg:h-[600px]">
+		<section className="relative mx-auto mt-14 flex h-[250px] w-full max-w-screen-2xl flex-col items-center justify-center text-center lg:h-[600px]">
 			<h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-5xl font-extrabold uppercase text-transparent lg:text-[150px] lg:leading-[180px]">
 				Gen Z review <br />
 				trải nghiệm

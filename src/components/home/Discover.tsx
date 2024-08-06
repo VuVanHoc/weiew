@@ -90,103 +90,108 @@ export default function Discover() {
 		REVIEWS[0],
 	);
 	return (
-		<section className="relative mx-8 mt-8 lg:py-[80px]" id="services">
-			<div className="mx-auto w-full lg:w-4/5">
-				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-3xl font-bold text-transparent lg:text-5xl lg:leading-[58px]">
-					WEIEW Có Gì?
-				</h2>
-				<div className="mx-auto mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
-				<p className="text-center text-[18px] text-[#989B9F]">
-					Nhằm cung cấp thông tin review xác thực cũng như giúp các
-					bạn gen Z có lựa chọn đúng đắn hơn đặc biệt trong việc chọn
-					trường Đại học và chọn một trung tâm tiếng anh tốt để học,
-					WeieW xin được hỗ trợ với 2 dịch vụ:
-				</p>
-			</div>
-			<div className="relative mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-				{REVIEWS.map((review) => (
-					<div
-						onClick={() => setCurrentReviewSelected(review)}
-						key={review.id}
-						className={cx(
-							"group cursor-pointer rounded-3xl border border-gray-50 bg-white from-primary to-secondary px-2 py-2 shadow-xl transition-all hover:bg-gradient-to-r lg:px-8 lg:py-8",
-							currentReviewSelected.id === review.id
-								? "bg-gradient-to-r"
-								: "",
-						)}
-					>
-						<Image
-							src={review.image}
-							alt={review.name}
-							className="w-full"
-						/>
-						<p
+		<div className="mx-8">
+			<section
+				className="relative mx-auto mt-8 max-w-screen-2xl lg:py-[80px]"
+				id="services"
+			>
+				<div className="mx-auto w-full lg:w-4/5">
+					<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-3xl font-bold text-transparent lg:text-5xl lg:leading-[58px]">
+						WEIEW Có Gì?
+					</h2>
+					<div className="mx-auto mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
+					<p className="text-center text-[18px] text-[#989B9F]">
+						Nhằm cung cấp thông tin review xác thực cũng như giúp
+						các bạn gen Z có lựa chọn đúng đắn hơn đặc biệt trong
+						việc chọn trường Đại học và chọn một trung tâm tiếng anh
+						tốt để học, WeieW xin được hỗ trợ với 2 dịch vụ:
+					</p>
+				</div>
+				<div className="relative mx-auto mt-8 grid w-full grid-cols-1 gap-8 lg:w-[70%] lg:grid-cols-2">
+					{REVIEWS.map((review) => (
+						<div
+							onClick={() => setCurrentReviewSelected(review)}
+							key={review.id}
 							className={cx(
-								"bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent group-hover:text-white",
+								"group cursor-pointer rounded-3xl border border-gray-50 bg-white from-primary to-secondary px-2 py-2 shadow-xl transition-all hover:bg-gradient-to-r lg:px-8 lg:py-8",
 								currentReviewSelected.id === review.id
-									? "text-white"
+									? "bg-gradient-to-r"
 									: "",
 							)}
 						>
-							{review.name}
-						</p>
-						<p
-							className={cx(
-								"mt-4 text-center text-[#989B9F] group-hover:text-white",
-								currentReviewSelected.id === review.id
-									? "text-white"
-									: "",
-							)}
-						>
-							{review.description}
-						</p>
-					</div>
-				))}
-			</div>
-			<h2 className="mt-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-3xl font-bold text-transparent lg:text-5xl lg:leading-[58px]">
-				{`Quy Trình ${currentReviewSelected.name}`}
-			</h2>
-			<div className="mx-auto mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
-			<div className="relative mx-auto grid w-full grid-cols-4 gap-4 lg:w-[90%]">
-				<Image
-					src={rocket}
-					alt="dot frame"
-					className="absolute -left-[100px] top-[40%] hidden -translate-y-[40%] lg:-left-[80px] lg:top-[45%] lg:block lg:-translate-y-[45%]"
-				/>
-				<Image
-					className="absolute left-1/2 top-[35%] -translate-x-1/2 -translate-y-[40%] md:top-[50%] lg:top-[45%] lg:-translate-y-[45%]"
-					src={listConnect}
-					alt=""
-				/>
-				{currentReviewSelected.steps.map((step, index) => (
-					<div
-						key={index}
-						className="flex flex-col items-center justify-start gap-5 bg-white py-4 lg:py-10"
-					>
-						<Image
-							src={step.image}
-							alt={step.name}
-							className="aspect-square md:h-[100px] lg:h-[100px]"
-						/>
-						<div className="mt-4 text-center lg:mt-10">
-							<p className="text-xs font-bold text-black lg:text-xl">
-								Bước {index + 1}
-								<br />
-								{step.name}
+							<Image
+								src={review.image}
+								alt={review.name}
+								className="w-full"
+							/>
+							<p
+								className={cx(
+									"bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent group-hover:text-white",
+									currentReviewSelected.id === review.id
+										? "text-white"
+										: "",
+								)}
+							>
+								{review.name}
 							</p>
-							<p className="mt-1 text-center text-[10px] text-[#989B9F] lg:mt-4 lg:text-base">
-								{step.description}
+							<p
+								className={cx(
+									"mt-4 text-center text-[#989B9F] group-hover:text-white",
+									currentReviewSelected.id === review.id
+										? "text-white"
+										: "",
+								)}
+							>
+								{review.description}
 							</p>
 						</div>
-					</div>
-				))}
-			</div>
+					))}
+				</div>
+				<h2 className="mt-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-3xl font-bold text-transparent lg:text-5xl lg:leading-[58px]">
+					{`Quy Trình ${currentReviewSelected.name}`}
+				</h2>
+				<div className="mx-auto mb-10 mt-6 h-[4px] w-[100px] bg-[#202330] lg:h-[8px]"></div>
+				<div className="relative mx-auto grid w-full grid-cols-4 gap-4 lg:w-[90%]">
+					<Image
+						src={rocket}
+						alt="dot frame"
+						className="absolute -left-[100px] top-[40%] hidden -translate-y-[40%] lg:-left-[80px] lg:top-[45%] lg:block lg:-translate-y-[45%]"
+					/>
+					<Image
+						className="absolute left-1/2 top-[35%] -translate-x-1/2 -translate-y-[40%] md:top-[50%] lg:top-[45%] lg:w-[1536px] lg:-translate-y-[45%]"
+						src={listConnect}
+						alt=""
+					/>
+					{currentReviewSelected.steps.map((step, index) => (
+						<div
+							key={index}
+							className="flex flex-col items-center justify-start gap-5 bg-white py-4 lg:py-10"
+						>
+							<Image
+								src={step.image}
+								alt={step.name}
+								className="aspect-square md:h-[100px] lg:h-[100px]"
+							/>
+							<div className="mt-4 text-center lg:mt-10">
+								<p className="text-xs font-bold text-black lg:text-xl">
+									Bước {index + 1}
+									<br />
+									{step.name}
+								</p>
+								<p className="mt-1 text-center text-[10px] text-[#989B9F] lg:mt-4 lg:text-base">
+									{step.description}
+								</p>
+							</div>
+						</div>
+					))}
+				</div>
 
-			<Image
-				src={dotFrame}
-				alt="dot frame"
-				className="absolute -top-10 left-[15%] hidden lg:block"
-			/>
-		</section>
+				<Image
+					src={dotFrame}
+					alt="dot frame"
+					className="absolute -top-10 left-[15%] hidden lg:block"
+				/>
+			</section>
+		</div>
 	);
 }

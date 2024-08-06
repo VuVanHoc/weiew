@@ -6,7 +6,7 @@ import aboutUs from "/public/about-us.svg";
 
 export default function AboutUs() {
 	return (
-		<section className="relative mx-8 mt-8 flex h-auto flex-col items-center pt-[80px] lg:h-[540px] lg:flex-row lg:py-[80px]">
+		<section className="relative mx-8 mt-8 flex h-auto max-w-screen-2xl flex-col items-center px-8 pt-[80px] lg:h-[540px] lg:flex-row lg:py-[80px]">
 			<div className="flex-1">
 				<h2 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-3xl font-bold text-transparent lg:text-5xl lg:leading-[58px]">
 					Về chúng tôi

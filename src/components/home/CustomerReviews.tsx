@@ -100,10 +100,11 @@ export default function CustomerReviews() {
 				<Carousel
 					infinite={true}
 					autoPlay={true}
+					showDots={true}
 					ssr={true}
 					itemClass="px-4"
 					responsive={responsive}
-					className="mx-auto pb-[100px] pt-8"
+					className="mx-auto w-4/5 pb-[100px] pt-8"
 				>
 					{reviews.map((review) => (
 						<div

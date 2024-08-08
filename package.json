@@ -10,12 +10,15 @@
 	},
 	"dependencies": {
 		"@react-spring/web": "^9.7.4",
+		"@tinymce/tinymce-react": "^5.1.1",
 		"clsx": "^2.1.1",
+		"cookies-next": "^4.2.1",
 		"next": "14.2.5",
 		"nodemailer": "^6.9.14",
 		"react": "^18",
 		"react-dom": "^18",
 		"react-multi-carousel": "^2.8.5",
+		"react-toastify": "^10.0.5",
 		"tailwindcss-animated": "^1.1.2"
 	},
 	"devDependencies": {
